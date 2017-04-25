@@ -40,8 +40,9 @@ public abstract class BaseTest {
     @Parameters({"selenium.browser", "selenium.grid"})
     public void setUp(@Optional("chrome") String browser, @Optional("") String gridUrl) {
         browserName = browser;
-        driver = new EventFiringWebDriver(DriverFactory.initDriver(browser));
-        // driver = new EventFiringWebDriver(DriverFactory.initDriver(browser, gridUrl)); //"chrome", "http://localhost:4444/wd/hub"
+        // driver = new EventFiringWebDriver(DriverFactory.initDriver(browser));
+        // by someone reason not always test passed on selenium grid
+        driver = new EventFiringWebDriver(DriverFactory.initDriver(browser, gridUrl)); //"chrome", "http://localhost:4444/wd/hub"
         driver.register(new EventHandler());
         // Specifies the amount of time the driver should wait when searching for an element if it is not immediately present.
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);

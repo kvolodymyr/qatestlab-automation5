@@ -73,7 +73,7 @@ public class PlaceOrderTest extends BaseTest {
         actions.toElement(By.className("add-to-cart")).click();
 
         actions.waitForVisibilityContent(By.cssSelector(".modal-header")); // id - blockcart-modal
-        try{ Thread.sleep(100); } catch(InterruptedException e) {}
+
         Assert.assertTrue(
         actions.toElement(By.cssSelector("h4.modal-title")) //myModalLabel
                 .getText()

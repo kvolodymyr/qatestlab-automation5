@@ -69,7 +69,8 @@ public class GeneralActions {
         List<WebElement> products = driver.findElements(By.tagName("article"));
         Random random = (new Random());
         int index = random.nextInt(products.size()) + 1;
-        // index = 0;
+        // index = 0; <--- HOTFIX: 2017/4/24 - site was updated then by someone reason product details was incorrect
+
         System.out.println("Producst index: " + index);
         element = products.get(index).findElement(By.tagName("a"));
         element.click();

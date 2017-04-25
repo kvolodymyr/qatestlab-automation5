@@ -8,7 +8,6 @@
             <class name="myprojects.automation.assignment5.tests.PlaceOrderTest" />
         </classes>
     </test>
-<!--
     <test name="Create New Order [Firefox]" >
         <parameter name="selenium.browser" value="firefox" />
         <parameter name="selenium.grid" value="http://localhost:4444/wd/hub" />
@@ -18,13 +17,6 @@
     </test>
     <test name="Create New Order [PhantomJs]" >
         <parameter name="selenium.browser" value="phantomjs" />
-        <parameter name="selenium.grid" value="http://localhost:6666/wd/hub" />
-        <classes>
-            <class name="myprojects.automation.assignment5.tests.PlaceOrderTest" />
-        </classes>
-    </test>
-    <test name="Create New Order [Firefox]" >
-        <parameter name="selenium.browser" value="firefox" />
         <parameter name="selenium.grid" value="http://localhost:4444/wd/hub" />
         <classes>
             <class name="myprojects.automation.assignment5.tests.PlaceOrderTest" />
@@ -37,13 +29,6 @@
             <class name="myprojects.automation.assignment5.tests.PlaceOrderTest" />
         </classes>
     </test>
-    <test name="Create New Order [PhantomJs]" >
-        <parameter name="selenium.browser" value="phantomjs" />
-        <parameter name="selenium.grid" value="http://localhost:6666/wd/hub" />
-        <classes>
-            <class name="myprojects.automation.assignment5.tests.PlaceOrderTest" />
-        </classes>
-    </test>
     <test name="Create New Order [Android]" >
         <parameter name="selenium.browser" value="android" />
         <parameter name="selenium.grid" value="http://localhost:7777/wd/hub" />
@@ -51,5 +36,4 @@
             <class name="myprojects.automation.assignment5.tests.PlaceOrderTest" />
         </classes>
     </test>
--->
 </suite>
